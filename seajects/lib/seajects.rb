@@ -74,6 +74,8 @@ class Seajects
   LINE = 2
   # Index of element type
   TYPE = 3
+  # Index of parent
+  PARENT = 4
 
   attr_reader :path
 
@@ -124,7 +126,7 @@ class Seajects
     element.type = sections[TYPE]
     element.line = parse_line_number sections
 
-    parent = sections[4].to_s
+    parent = sections[PARENT].to_s
     if parent.start_with?("class:")
       parent = parent[6..-1]
     end
