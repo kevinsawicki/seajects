@@ -35,7 +35,7 @@ class Container < Element
   def to_json(*args)
     hash = to_hash
     hash[:children] = @children
-    hash.to_json(*args);
+    hash.to_json(*args)
   end
 end
 
