@@ -18,7 +18,7 @@ class TestSeajects < Test::Unit::TestCase
     assert_not_nil tag.children
     assert tag.children.length > 0
   end
-  
+
   def testfrom_content
     tags = Seajects.parse_content "Main.java", "public String toString() {}"
     assert_not_nil tags
