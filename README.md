@@ -24,7 +24,7 @@ tags = Seajects.from_content "stream.rb", content
 tags.each do |tag|
   puts "Class #{tag.name} at line #{tag.line}" if 'class' == tag.type
 end
-```ruby
+```
 
 ## License
 
